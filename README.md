@@ -105,3 +105,12 @@ db.getCollection('student').find({}).sort({studentId:1})
 Sort Desc:
 db.getCollection('student').find({}).sort({studentId:-1})
 ```
+
+### 13. Menampilkan semua data department secara urut, berdasarkan name secara ascending maupun descending.
+```
+Sort Asc:
+db.getCollection('student').find({}).sort({name:1})
+
+Sort Desc:
+db.getCollection('student').find({}).sort({name:-1})
+```
