@@ -26,3 +26,9 @@ use academic
 > db.createCollection("department")
 { "ok" : 1 }
 ```
+
+### 6. Melihat struktur collection student
+```
+var col_list= db.student.findOne();
+for (var col in col_list) { print (col) ; }
+```
