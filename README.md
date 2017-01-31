@@ -89,3 +89,10 @@ db.getCollection('student').find({})
 ```
 db.getCollection('student').find({},{name:1,address:1})
 ```
+
+### 11. Menampilkan key studentId, name, dan address dari data student yang mempunyai studentId tertentu.
+```
+db.getCollection('student').find({studentId:"2"},{studentId:1,name:1,address:1})
+Atau
+db.student.find({studentId:"2"},{studentId:1,name:1,address:1})
+```
