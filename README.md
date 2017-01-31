@@ -84,3 +84,8 @@ db.student.insert([
 ```
 db.getCollection('student').find({})
 ```
+
+### 10. Menampilkan key name dan address dalam collection student
+```
+db.getCollection('student').find({},{name:1,address:1})
+```
