@@ -14,3 +14,9 @@ show collections
 ```
 use academic
 ```
+
+### 4. Membuat collection department
+```
+> db.createCollection("department")
+{ "ok" : 1 }
+```
