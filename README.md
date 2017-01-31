@@ -96,3 +96,12 @@ db.getCollection('student').find({studentId:"2"},{studentId:1,name:1,address:1})
 Atau
 db.student.find({studentId:"2"},{studentId:1,name:1,address:1})
 ```
+
+### 12. Menampilkan semua data student secara urut berdasarkan name dengan sort() secara ascending maupung descending.
+```
+Sort Asc:
+db.getCollection('student').find({}).sort({studentId:1})
+
+Sort Desc:
+db.getCollection('student').find({}).sort({studentId:-1})
+```
