@@ -114,3 +114,9 @@ db.getCollection('student').find({}).sort({name:1})
 Sort Desc:
 db.getCollection('student').find({}).sort({name:-1})
 ```
+
+### 14. Mencari data student dengan name tertentu
+```
+Show By Name :
+db.getCollection('student').find({name:"Tiga"})
+```
