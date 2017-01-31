@@ -42,3 +42,45 @@ db.department.insert([
 {code:"4",name:"empat",major:"it"},
 {code:"5",name:"lima",major:"it"}])
 ```
+
+
+### 8. menginputkan 3 data ke dalam collection student beserta reference ke department.
+```
+db.student.insert([
+{
+    studentId:"1",
+    name:"Satu",
+    address:"Jakarta",
+    department:[{
+        $ref: "department",
+        $id: ObjectId("534009e4d852427820000002"),
+        $db: "academic"
+    }]
+},
+{
+    studentId:"2",
+    name:"Dua",
+    address:"Jakarta",
+    department:[{
+        $ref: "department",
+        $id: ObjectId("589017554ea152b89baf0417"),
+        $db: "academic"
+    }]
+},
+{
+    studentId:"3",
+    name:"Tiga",
+    address:"Jakarta",
+    department:[{
+        $ref: "department",
+        $id: ObjectId("589017554ea152b89baf0418"),
+        $db: "academic"
+    }]
+}
+])
+```
+
+### 9. Melihat isi collection student
+```
+db.getCollection('student').find({})
+```
