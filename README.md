@@ -32,3 +32,13 @@ use academic
 var col_list= db.student.findOne();
 for (var col in col_list) { print (col) ; }
 ```
+
+### 7. menginputkan 5 data data ke dalam collection department
+```
+db.department.insert([
+{code:"1",name:"satu",major:"it"},
+{code:"2",name:"dua",major:"it"},
+{code:"3",name:"tiga",major:"it"},
+{code:"4",name:"empat",major:"it"},
+{code:"5",name:"lima",major:"it"}])
+```
