@@ -9,3 +9,8 @@ use academic
 ```
 show collections
 ```
+
+### 3. Membuat dan mengaktifkan database
+```
+use academic
+```
