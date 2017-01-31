@@ -20,3 +20,9 @@ use academic
 > db.createCollection("department")
 { "ok" : 1 }
 ```
+
+### 5. Membuat collection student
+```
+> db.createCollection("department")
+{ "ok" : 1 }
+```
